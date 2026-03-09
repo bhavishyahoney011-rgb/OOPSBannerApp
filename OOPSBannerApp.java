@@ -1,26 +1,46 @@
+ public class BannerApp {
 
+    // Method to create letter O
+    public static String[] getO() {
+        return new String[]{
+                " *** ",
+                "*   *",
+                "*   *",
+                "*   *",
+                " *** "
+        };
+    }
 
+    // Method to create letter P
+    public static String[] getP() {
+        return new String[]{
+                "**** ",
+                "*   *",
+                "**** ",
+                "*    ",
+                "*    "
+        };
+    }
 
-
-
-
-public class OOPSBannerApp {
+    // Method to create letter S
+    public static String[] getS() {
+        return new String[]{
+                " ****",
+                "*    ",
+                " *** ",
+                "    *",
+                "**** "
+        };
+    }
 
     public static void main(String[] args) {
 
-        String[] banner = {
+        String[] O = getO();
+        String[] P = getP();
+        String[] S = getS();
 
-                String.join("   ", " ***** ", " ***** ", " ***** ", " ***** "),
-                String.join("   ", "*     *", "*     *", "*     *", "*     *"),
-                String.join("   ", "*     *", "*     *", "*     *", "*     *"),
-                String.join("   ", "*     *", "*     *", "*     *", " ***** "),
-                String.join("   ", "*     *", "*     *", "*     *", "*      "),
-                String.join("   ", "*     *", "*     *", "*     *", "*      "),
-                String.join("   ", " ***** ", " ***** ", " ***** ", "*      ")
-        };
-
-        for (String line : banner) {
-            System.out.println(line);
+        for (int i = 0; i < O.length; i++) {
+            System.out.println(O[i] + "  " + P[i] + "  " + S[i] + "  " + S[i]);
         }
     }
 }
