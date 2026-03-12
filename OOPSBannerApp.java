@@ -9,30 +9,27 @@ public class UC8BannerApp {
 
         // Step 2: Store patterns
 
-   import java.util.Scanner;
+    import java.util.Scanner;
 
-public class BasicCalculator {
+public class TriangleArea {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
 
-        // Taking user input
-        System.out.print("Enter first number: ");
-        double number1 = sc.nextDouble();
+        // Taking input
+        System.out.print("Enter base in cm: ");
+        double base = sc.nextDouble();
 
-        System.out.print("Enter second number: ");
-        double number2 = sc.nextDouble();
+        System.out.print("Enter height in cm: ");
+        double height = sc.nextDouble();
 
-        // Arithmetic operations
-        double addition = number1 + number2;
-        double subtraction = number1 - number2;
-        double multiplication = number1 * number2;
-        double division = number1 / number2;
+        // Area in square centimeters
+        double areaCm = 0.5 * base * height;
 
-        // Printing results
-        System.out.println("Addition = " + addition);
-        System.out.println("Subtraction = " + subtraction);
-        System.out.println("Multiplication = " + multiplication);
-        System.out.println("Division = " + division);
+        // Convert to square inches
+        double areaIn = areaCm / 6.4516;
+
+        // Output
+        System.out.println("The Area of the triangle in sq in is " + areaIn + " and sq cm is " + areaCm);
     }
 }
