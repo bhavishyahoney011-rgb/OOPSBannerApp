@@ -9,29 +9,25 @@ public class UC8BannerApp {
 
         // Step 2: Store patterns
 
-     import java.util.Scanner;
+      import java.util.Scanner;
 
-public class OddEvenNumbers {
+public class EmployeeBonus {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter a number: ");
-        int number = sc.nextInt();
+        System.out.print("Enter salary: ");
+        double salary = sc.nextDouble();
 
-        if (number <= 0) {
-            System.out.println("Please enter a natural number.");
-        } else {
+        System.out.print("Enter years of service: ");
+        int years = sc.nextInt();
 
-            for (int i = 1; i <= number; i++) {
+        double bonus = 0;
 
-                if (i % 2 == 0) {
-                    System.out.println(i + " is Even");
-                } else {
-                    System.out.println(i + " is Odd");
-                }
-
-            }
+        if (years > 5) {
+            bonus = salary * 0.05;
         }
+
+        System.out.println("Bonus amount is " + bonus);
     }
 }
