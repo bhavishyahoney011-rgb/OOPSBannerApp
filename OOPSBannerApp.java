@@ -9,9 +9,9 @@ public class UC8BannerApp {
 
         // Step 2: Store patterns
 
-    import java.util.Scanner;
+     import java.util.Scanner;
 
-public class SmallestNumberCheck {
+public class LargestNumberCheck {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -26,11 +26,9 @@ public class SmallestNumberCheck {
         System.out.print("Enter third number: ");
         int number3 = sc.nextInt();
 
-        // Checking if first number is smallest
-        if (number1 < number2 && number1 < number3) {
-            System.out.println("Is the first number the smallest? Yes");
-        } else {
-            System.out.println("Is the first number the smallest? No");
-        }
+        // Checking largest
+        System.out.println("Is the first number the largest? " + (number1 > number2 && number1 > number3));
+        System.out.println("Is the second number the largest? " + (number2 > number1 && number2 > number3));
+        System.out.println("Is the third number the largest? " + (number3 > number1 && number3 > number2));
     }
 }
