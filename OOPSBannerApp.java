@@ -9,25 +9,30 @@ public class UC8BannerApp {
 
         // Step 2: Store patterns
 
-      import java.util.Scanner;
+       import java.util.Scanner;
 
-public class EmployeeBonus {
+public class LeapYearCheck1 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter salary: ");
-        double salary = sc.nextDouble();
+        System.out.print("Enter a year: ");
+        int year = sc.nextInt();
 
-        System.out.print("Enter years of service: ");
-        int years = sc.nextInt();
-
-        double bonus = 0;
-
-        if (years > 5) {
-            bonus = salary * 0.05;
+        if (year < 1582) {
+            System.out.println("Enter a year greater than or equal to 1582");
+        } 
+        else if (year % 400 == 0) {
+            System.out.println("Year is a Leap Year");
+        } 
+        else if (year % 100 == 0) {
+            System.out.println("Year is not a Leap Year");
+        } 
+        else if (year % 4 == 0) {
+            System.out.println("Year is a Leap Year");
+        } 
+        else {
+            System.out.println("Year is not a Leap Year");
         }
-
-        System.out.println("Bonus amount is " + bonus);
     }
 }
