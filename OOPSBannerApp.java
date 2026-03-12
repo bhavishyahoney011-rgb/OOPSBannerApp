@@ -11,24 +11,27 @@ public class UC8BannerApp {
 
      import java.util.Scanner;
 
-public class LargestNumberCheck {
+public class OddEvenNumbers {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
 
-        // Taking input
-        System.out.print("Enter first number: ");
-        int number1 = sc.nextInt();
+        System.out.print("Enter a number: ");
+        int number = sc.nextInt();
 
-        System.out.print("Enter second number: ");
-        int number2 = sc.nextInt();
+        if (number <= 0) {
+            System.out.println("Please enter a natural number.");
+        } else {
 
-        System.out.print("Enter third number: ");
-        int number3 = sc.nextInt();
+            for (int i = 1; i <= number; i++) {
 
-        // Checking largest
-        System.out.println("Is the first number the largest? " + (number1 > number2 && number1 > number3));
-        System.out.println("Is the second number the largest? " + (number2 > number1 && number2 > number3));
-        System.out.println("Is the third number the largest? " + (number3 > number1 && number3 > number2));
+                if (i % 2 == 0) {
+                    System.out.println(i + " is Even");
+                } else {
+                    System.out.println(i + " is Odd");
+                }
+
+            }
+        }
     }
 }
