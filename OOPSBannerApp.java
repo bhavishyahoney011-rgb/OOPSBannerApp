@@ -11,19 +11,20 @@ public class UC8BannerApp {
 
     import java.util.Scanner;
 
-public class TemperatureConversion {
+public class DivisibleByFive {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
 
-        // Taking Celsius input
-        System.out.print("Enter temperature in Celsius: ");
-        double celsius = sc.nextDouble();
+        // Taking input
+        System.out.print("Enter a number: ");
+        int number = sc.nextInt();
 
-        // Convert to Fahrenheit
-        double fahrenheitResult = (celsius * 9/5) + 32;
-
-        // Print result
-        System.out.println("The " + celsius + " celsius is " + fahrenheitResult + " fahrenheit");
+        // Check divisibility
+        if (number % 5 == 0) {
+            System.out.println("Is the number " + number + " divisible by 5? Yes");
+        } else {
+            System.out.println("Is the number " + number + " divisible by 5? No");
+        }
     }
 }
